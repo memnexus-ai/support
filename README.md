@@ -2,9 +2,15 @@
 
 This is the public support repository for [MemNexus](https://memnexus.ai) — a universal memory layer for AI assistants.
 
-## How to use this repo
+## Discord
 
-Use GitHub Issues to report bugs, request features, or share feedback:
+Join our Discord server for real-time support, quick questions, and discussion:
+
+**[discord.gg/Tb9U5DWm](https://discord.gg/Tb9U5DWm)**
+
+## GitHub Issues
+
+Use GitHub Issues for structured bug reports and feature requests:
 
 - [Report a bug](https://github.com/memnexus-ai/support/issues/new?template=bug_report.yml)
 - [Request a feature](https://github.com/memnexus-ai/support/issues/new?template=feature_request.yml)
