@@ -1,0 +1,32 @@
+name: Feature Request
+description: Suggest a feature or improvement.
+title: "[Feature]: "
+labels: ["feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We'd love to hear your ideas. Tell us what you need and why.
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want?
+      description: Describe the feature or improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter?
+      description: How would this help your workflow?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example usage
+      description: A concrete example or scenario showing how you'd use this.
+      placeholder: |
+        I'd like to run `mx memories export --format markdown` so I can...
+    validations:
+      required: false
