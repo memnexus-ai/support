@@ -1,0 +1,60 @@
+name: Bug Report
+description: Report something that's broken or not working as expected.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please fill out as much detail as you can.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug. What did you do, and what went wrong?
+      placeholder: |
+        I ran `mx memories search --query "test"` and got an error...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: What should have happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps to reproduce the issue.
+      placeholder: |
+        1. Run `mx memories create --content "test"`
+        2. Run `mx memories search --query "test"`
+        3. See error
+    validations:
+      required: false
+  - type: input
+    id: cli-version
+    attributes:
+      label: CLI version
+      description: "Run `mx --version` and paste the output."
+      placeholder: "1.7.28"
+    validations:
+      required: false
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: "OS, Node.js version, AI client (if using MCP)."
+      placeholder: "macOS 14.3, Node.js 20.11, Claude Desktop"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output / logs
+      description: Paste any error messages or relevant logs.
+      render: shell
+    validations:
+      required: false
